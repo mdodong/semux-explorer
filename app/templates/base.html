@@ -1,0 +1,14 @@
+<html>
+    <head>
+      {% if title %}
+      <title>{{ title }} - Semux Explorer</title>
+      {% else %}
+      <title>Welcome to Semux Explorer</title>
+      {% endif %}
+    </head>
+    <body>
+        <div>Explorer: <a href="/index">Home</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
